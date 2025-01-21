@@ -28,7 +28,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [solution URL](https://github.com/Sri507/nft-preview-card)
-- Live Site URL: [live site URL][(https://sri507.github.io/nft-preview-card/)
+- Live Site URL: [live site URL](https://sri507.github.io/nft-preview-card/)
 
 ## My process
 
