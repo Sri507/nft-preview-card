@@ -1,0 +1,124 @@
+:root {
+  --primary-softBlue: hsl(215, 51%, 70%);
+  --primary-cyan: hsl(178, 100%, 50%);
+  --neutral-blue-900: hsl(217, 54%, 11%);
+  --neutral-blue-800: hsl(216, 50%, 16%);
+  --neutral-blue-700: hsl(215, 32%, 27%);
+  --white: hsl(0, 0%, 100%);
+  --fs: 18px;
+  --ff: "Outfit", serif;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+img,
+svg {
+  display: block;
+  max-width: 100%;
+}
+* {
+  margin: 0;
+}
+main {
+  font-family: var(--ff);
+  background: var(--neutral-blue-900);
+  height: 100svh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: var(--fs);
+}
+.container {
+  background: var(--neutral-blue-800);
+  border-radius: 1rem;
+  padding: 24px;
+  width: 375px;
+}
+.container .img-wrapper {
+  position: relative;
+}
+.container .img-wrapper:hover {
+  cursor: pointer;
+}
+.container .img-wrapper:hover .hover-wrapper {
+  opacity: 1;
+}
+.container .img-wrapper .main-img {
+  border-radius: 10px;
+}
+.container .hover-wrapper {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  top: 0;
+  left: 0;
+  width: 327px;
+  height: 327px;
+  background-color: hsla(178, 100%, 50%, 0.5);
+  opacity: 0;
+  transition: 0.5s ease;
+}
+.word-container .title {
+  width: fit-content;
+  color: var(--white);
+  margin-top: 28px;
+  margin-bottom: 16px;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+.word-container .title:hover {
+  color: var(--primary-cyan);
+  cursor: pointer;
+}
+.word-container .description {
+  color: var(--primary-softBlue);
+  line-height: 1.5;
+  font-weight: 300;
+  margin-bottom: 16px;
+}
+.coin-container {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 18px;
+  border-bottom: 1px solid var(--neutral-blue-700);
+}
+.coin-wrapper,
+.time-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.coin-wrapper .coin {
+  color: var(--primary-cyan);
+  font-weight: 600;
+}
+.time-wrapper .time {
+  color: var(--primary-softBlue);
+  font-weight: 300;
+}
+.C-wrapper {
+  margin-top: 12px;
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+}
+.C-wrapper .Cimg {
+  width: 40px;
+  border: 1px solid var(--white);
+  border-radius: 100%;
+}
+.C-wrapper .Cname {
+  padding-left: 20px;
+  color: var(--primary-softBlue);
+}
+.C-wrapper .Cname span {
+  color: var(--white);
+}
+.C-wrapper .Cname span:hover {
+  color: var(--primary-cyan);
+  cursor: pointer;
+}
